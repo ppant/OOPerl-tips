@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 use 
-# This script will provide the solution for remving leading and trailing spaces in a string
+# This script will provide the solution for removing leading and trailing spaces in a string
 # Solution -1
 # These substitutions are very handly when you do comparisons. So it's always advisable to remove these extra space before you check for equality
 my $test_str = '  This is string to test leading and trailing space.  ';
