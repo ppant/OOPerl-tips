@@ -1,7 +1,8 @@
 #!/usr/bin/perl -w
 use strict;
-use 
-# This script will provide the solution for remving leading and trailing spaces in a string
+use warnings;
+use Data::Dumper;
+# This script will provide the solution for removing leading and trailing spaces in a string
 # Solution -1
 # These substitutions are very handly when you do comparisons. So it's always advisable to remove these extra space before you check for equality
 my $test_str = '  This is string to test leading and trailing space.  ';
@@ -11,3 +12,10 @@ $test_str =~ s/^\s+//;
 $test_str =~ s/\s+$//;
 # result string can be used for further opeartions
 print $test_str;
+print "\n";
+# Solution - 2
+# We can combine both regaular expressions in one 
+$test_str =~ s/(^\s+|\s+$)//g;
+# !Caution: Capuring might cost you some execution time .. noncapuring regx should spped up 
+print $test_str;
+print "\n";
