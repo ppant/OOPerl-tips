@@ -20,7 +20,9 @@ use warnings;
  # with feched color value . this needs to be done before removing style attributes from tags
  while ($data =~ /background:(.*?);/ig) {
  $bgcolor_fetch = $1;
-  $data =~ s/style\=.*?background:(.*?;).*?\>/bgcolor=\"$bgcolor_fetch\";/is;
+  #$data =~ s/style\=.*?background:(.*?;).*?\>/bgcolor=\"$bgcolor_fetch\";/is;
+  # Have done some refinement in regx
+  $data =~ s/<\/?\s*TD(\s[^>]*?background:(.*?;).*?\>)/<td bgcolor=\"$bgcolor_fetch\";\>/si;
  }
   # Now we can safely remove styles 
  $data =~ s/style\=\'.*?\'|style\=\".*?\"//igs;
