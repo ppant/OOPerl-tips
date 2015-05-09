@@ -7,3 +7,5 @@ Documentation and test scripts for day to day Perl programming issue.
 
 Tip-1: Solution for removing leading and trailing spaces in a string
 Table Manipulation: Few regx which can be used to manipulate HTML tables. 
+
+Tip-2: Table manipulation: Idea is to clean table with attributes and write a CSS file based on these also add a new class for that table. 
