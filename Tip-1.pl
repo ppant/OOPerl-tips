@@ -20,5 +20,5 @@ say $test_str;
 # Solution - 2
 # We can combine both regaular expressions in one 
 $test_str =~ s/(^\s+|\s+$)//g;
-# !Caution: Capuring might cost you some execution time .. noncapuring regx should speed up 
+# !Caution: Capuring might cost you some execution time 
 say $test_str;
