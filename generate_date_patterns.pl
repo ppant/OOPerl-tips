@@ -2,15 +2,11 @@
 use strict;
 use Date::Manip; 
 use Data::Dumper;  
-#my $str = "today";
-#my $recur = new Date::Manip;
-#my $err = $recur->ParseRecur($str);
-#$err = $date->parse("1st Thursday in June 1992");
-# To find the 2nd Tuesday of every month
-# &yearly();
+# calculate the dates for yearly patterns.
+&yearly();
 &monthly();
-# &weekly();
-# &daily();
+&weekly();
+&daily();
 sub yearly {
 	my $base = "2015-10-29";
 	my $start_date = "2015-10-29";
