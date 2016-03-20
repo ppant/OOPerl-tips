@@ -1,3 +1,6 @@
+
+# Script to calculate recurrence dates based on given criteria using Perl Date::Manip module.
+# All the input dates in this are given hard coded. These shall be passed through program.
 #!/usr/local/bin/perl -w
 use strict;
 use Date::Manip; 
@@ -33,12 +36,12 @@ sub yearly {
 	# 0:0*3:2:0:0:0        third tuesday of every month
 	
 	# "$every_year*10:0:1*1:0:0:0
-  #my @dates = ParseRecur("2:1*2:2:0:0:0",$base,$start,$stop);
-  #my @dates = ParseRecur("third tuesday of every month");
-  #my @dates = ParseRecur("0:0:2:1:0:0:0");
-  # $recur = ParseRecur($string [,$base,$date0,$date1,$flags]);
- # @dates = ParseRecur($string [,$base,$date0,$date1,$flags]);
-#print "Dates :".@dates."\n";
+	#my @dates = ParseRecur("2:1*2:2:0:0:0",$base,$start,$stop);
+	#my @dates = ParseRecur("third tuesday of every month");
+	#my @dates = ParseRecur("0:0:2:1:0:0:0");
+	# $recur = ParseRecur($string [,$base,$date0,$date1,$flags]);
+	# @dates = ParseRecur($string [,$base,$date0,$date1,$flags]);
+	#print "Dates :".@dates."\n";
 print "\n";
 print "******************************************************************************\n";
 print "**************************** YEARLY *******************************************\n";
@@ -219,3 +222,5 @@ sub daily () {
 	print Dumper (\@daily_dates_every_weekday);
 	print "\n";
 	}
+	
+	# End of script
